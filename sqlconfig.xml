@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlConfig SYSTEM "sqlconfig.dtd">
+<sqlConfig>
+<databaseConfig connection="iweave" schema="weave"/>
+<connection connectString="jdbc:mysql://mysql_iweave:3306/?user=root&amp;password=myFancyPassword" folderName="" is_superuser="true" name="iweave" pass="iweave"/>
+</sqlConfig>
