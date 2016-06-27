@@ -2,33 +2,33 @@
 
 A docker image to run Weave2 from iweave.com
 
-# Build yourself
+# Build image yourself
 
 ## Checkout git repository
 ```
 git clone https://github.com/Starfox899/docker-weave2.git
 ```
 
-## Build image
+## Build iweave image
 ```
 docker build -t iweave .
 ```
 
-## Run mysql and built image
+## Run mysql and iweave image
 
 ```
 docker run --rm --name mysql_iweave -d -e MYSQL_ROOT_PASSWORD=myFancyPassword mysql
 docker run --rm -it -p 8080:8080 --link mysql_iweave:mysql iweave
 ```
 
-# Run from dockerhub
+# Run image from dockerhub
 
 ``` 
 docker run --rm --name mysql_iweave -d -e MYSQL_ROOT_PASSWORD=myFancyPassword mysql
 docker run --rm -it -p 8080:8080 --link mysql_iweave:mysql starfox/iweave
 ```
 
-# First steps
+# First steps of usage
 
 1. Goto http://localhost:8080/AdminConsole.html
 2. Login with user *iweave* and password *iweave*
